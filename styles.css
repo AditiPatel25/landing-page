@@ -48,21 +48,10 @@ h1 {
 }
 
 a,
-.second-text {
-    font-size: 18px;
+.second-text, .subtext {
     text-decoration: none;
     color: #E5E7EB;
     margin-bottom: 10px;
-}
-
-.sign-up-header-button {
-    background-color: #3882F6;
-    color: white;
-    padding: 7px 25px;
-    border-radius: 7px;
-    border: none;
-    font-weight: bold;
-    width: 110px;
 }
 
 .header-text {
@@ -90,7 +79,6 @@ a,
 
 .pic-text {
     color: grey;
-    font-size: 18px;
     text-align: center;
 }
 
@@ -132,11 +120,11 @@ a,
     flex-direction: column;
     align-items: flex-end;
     max-width: 800px;
+    flex-shrink: 0;
 }
 
 .author {
     color: #1F2937;
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -155,11 +143,13 @@ a,
     gap: 10px;
     padding: 30px 40px;
     margin: 0px 100px;
+    flex-shrink: 0;
 }
 
 .sign-up-right {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .sign-up-text {
@@ -167,21 +157,11 @@ a,
     font-size: 24px;
 }
 
-.sign-up-button {
-    background-color: #3882F6;
-    color: white;
-    padding: 7px 25px;
-    border-radius: 7px;
-    border: 2px solid white;
-    font-weight: bold;
-    width: 110px;  
+.sign-sub-text {
+    color: #E5E7EB;
 }
 
-.sub-text {
-    color: rgb(241, 241, 241)
-}
-
-.sign-up-text, .sub-text, .sign-up-button {
+.sign-up-text, .sign-sub-text, .white-border {
     margin: 0 100px;
 }
 
@@ -194,3 +174,27 @@ a,
     align-items: center;
     justify-content: center;
 }
+
+/* APPLIES TO ALL */
+.no-border {
+    border: none;
+}
+
+.white-border {
+    border: 2px solid white;
+    margin: 0 100px;
+}
+
+.button {
+    background-color: #3882F6;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    width: 110px;  
+}
+
+.subtext {
+    font-size: 18px;
+}
+
