@@ -3,7 +3,6 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     min-height: 100vh;
-    /* text-align: center; */
 }
 
 /* HEADER SECTION */
@@ -20,7 +19,7 @@ ul {
     list-style: none;
 }
 
-.top-header {
+.top-header, .bottom-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,18 +58,11 @@ a,
 .sign-up-header-button {
     background-color: #3882F6;
     color: white;
-    padding: 7px 20px;
+    padding: 7px 25px;
     border-radius: 7px;
     border: none;
     font-weight: bold;
-    width: 100px;
-}
-
-.bottom-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin-bottom: -20pxxs; */
+    width: 110px;
 }
 
 .header-text {
@@ -147,9 +139,50 @@ a,
     font-size: 18px;
     font-weight: bold;
 }
+
+
 /* SIGN UP SECTION */
 .sign-up-section {
     background-color: rgb(255, 255, 255);
+    padding: 80px;
+}
+
+.sign-up {
+    background-color: #3882F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px 40px;
+    margin: 0px 100px;
+}
+
+.sign-up-right {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-text {
+    color: white;
+    font-size: 24px;
+}
+
+.sign-up-button {
+    background-color: #3882F6;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 7px;
+    border: 2px solid white;
+    font-weight: bold;
+    width: 110px;  
+}
+
+.sub-text {
+    color: rgb(241, 241, 241)
+}
+
+.sign-up-text, .sub-text, .sign-up-button {
+    margin: 0 100px;
 }
 
 /* FOOTER */
